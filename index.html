@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Drawing Board</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+    }
+
+    svg {
+      border: 2px solid rgb(8, 8, 8);
+      cursor: crosshair;
+      margin-top: 10px;
+    }
+
+    polyline {
+      fill: none;
+      stroke: black;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    button {
+      margin-top: 10px;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>SVG Drawing Pad (Mouse Based)</h2>
+
+  <svg id="canvas" width="800" height="500">
+    <rect id="bg" x="0" y="0" width="100%" height="100%" fill="#b3e5fc"></rect>
+  </svg>
+
+  <button id="clear">🗑 Clear Canvas</button>
+
+  <script src="task1.js"></script>
+</body>
+</html>
